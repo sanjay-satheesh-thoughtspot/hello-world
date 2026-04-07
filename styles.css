@@ -1,6 +1,9 @@
-:root {
+div[class*="tsEmbedContainer"] {
   /* Application-wide background; app-wide text color; app-wide font; app-wide text transform */
   --ts-var-root-background: #f6f8fa;
+}
+
+:root {
   /* grey900 */
   --ts-var-root-color: #3d4042;
 
