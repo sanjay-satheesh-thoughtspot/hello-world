@@ -1,0 +1,753 @@
+:root {
+  /* Application-wide background; app-wide text color; app-wide font; app-wide text transform */
+  --ts-var-root-background: #f6f8fa;
+  /* grey900 */
+  --ts-var-root-color: #3d4042;
+
+  --ts-var-root-font-family: Roboto, sans-serif;
+  --ts-var-root-text-transform: initial;
+  /* grey600 */
+  --ts-var-root-secondary-color: #6b6e6f;
+  /* darkGreen600 */
+  --ts-var-application-color: #2d8031;
+
+  /* Top navigation panel */
+  /* white */
+  --ts-var-nav-color: #ffffff;
+  /* ntGreen700 */
+  --ts-var-nav-background: #115740;
+  --ts-var-search-data-button-background: #dfe8e5;
+  /* ntGreen100 */
+  --ts-var-search-data-button-font-color: var(--ts-var-root-color);
+  --ts-var-search-data-button-font-family: var(--ts-var-root-font-family);
+
+  /* Search bar; search navigation and auto-suggestion panels */
+  --ts-var-search-bar-text-font-color: var(--ts-var-root-color);
+  --ts-var-search-bar-text-font-family: var(--ts-var-root-font-family);
+  --ts-var-search-bar-text-font-style: normal;
+  /* white */
+  --ts-var-search-bar-background: #ffffff;
+  /* white */
+  --ts-var-search-auto-complete-background: #ffffff;
+  /* white */
+  --ts-var-search-navigation-button-background: #ffffff;
+  /* white */
+  --ts-var-search-bar-navigation-help-text-background: #eaeaea;
+  --ts-var-search-bar-auto-complete-hover-background: #e2fce3;
+  /* darkGreen100 */
+  --ts-var-search-auto-complete-font-color: var(--ts-var-root-color);
+  /* grey600 */
+  --ts-var-search-auto-complete-subtext-font-color: #6b6e6f;
+
+  /*  Data and edit panels on Answer page */
+  /* white */
+  --ts-var-answer-data-panel-background-color: #ffffff;
+  /* white */
+  --ts-var-answer-edit-panel-background-color: #ffffff;
+
+  /* Primary buttons: For example; the Go button in the search bar; the Pin and Save buttons on the Search page */
+  /* grey025 */
+  --ts-var-button--primary-color: #fafafa;
+  /* darkGreen600 */
+  --ts-var-button--primary-background: #2d8031;
+  /* darkGreen800 */
+  --ts-var-button--primary--hover-background: #125d15;
+  --ts-var-button--primary--font-family: var(--ts-var-root-font-family);
+
+  /* Secondary buttons. For example; the Edit and Explore buttons on the Liveboard page */
+  --ts-var-button--secondary-color: var(--ts-var-root-color);
+  /* grey100 */
+  --ts-var-button--secondary-background: #eaeaea;
+  /* grey200 */
+  --ts-var-button--secondary--hover-background: #cecece;
+  --ts-var-button--secondary--font-family: var(--ts-var-root-font-family);
+
+  /* Tertiary buttons. For example; the Undo; Redo buttons on the Search page */
+  --ts-var-button--tertiary-color: var(--ts-var-root-color);
+  --ts-var-button--tertiary-background: rgba(30, 30, 30, 0);
+  --ts-var-button--tertiary--hover-background: rgba(30, 30, 30, 0.05);
+
+  /* Modular Homepage (new experience) */
+  --ts-var-home-watchlist-selected-text-color: var(--ts-var-root-color);
+  --ts-var-home-card-color: var(--ts-var-root-color);
+  --ts-var-home-favorite-suggestion-card-text-color: var(--ts-var-root-color);
+  --ts-var-home-favorite-suggestion-card-text-font-color: var(
+    --ts-var-root-color
+  );
+  /* grey050 */
+  --ts-var-home-favorite-suggestion-card-background: #f6f6f6;
+  /* yellow500 */
+  --ts-var-home-favorite-suggestion-card-icon-color: #fabe0f;
+
+  /* Natural Language Search panel */
+  --ts-var-sage-bar-header-background-color: var(--ts-var-root-color);
+  --ts-var-source-selector-background-color: initial;
+  --ts-var-sage-search-box-font-color: initial;
+  --ts-var-sage-search-box-background-color: initial;
+  --ts-var-sage-embed-background-color: initial;
+  --ts-var-sage-seed-questions-background: initial;
+  --ts-var-sage-seed-questions-font-color: initial;
+  --ts-var-sage-seed-questions-hover-background: initial;
+
+  /* Chart selection widget on answers and visualization pages */
+  /* aqua100 */
+  --ts-var-answer-chart-select-background: #e1fcff;
+  --ts-var-answer-chart-hover-background: rgba(30, 30, 30, 0.05);
+
+  /* Lists on pages such as Liveboards; Answers; Data objects */
+  /* grey050 */
+  --ts-var-list-selected-background: #f6f6f6;
+  --ts-var-list-hover-background: rgba(30, 30, 30, 0.05);
+
+  /* Liveboard */
+  /* grey100 */
+  --ts-var-liveboard-edit-bar-background: #eaeaea;
+  --ts-var-liveboard-cross-filter-layout-background: #ffffff;
+
+  /* Visualizations and answers */
+  /* Title text */
+  --ts-var-viz-title-color: var(--ts-var-root-color);
+  --ts-var-viz-title-font-family: Roboto, sans-serif;
+  --ts-var-viz-title-text-transform: none;
+
+  /* Subtitle and description text */
+  --ts-var-viz-description-color: var(--ts-var-root-color);
+  --ts-var-viz-description-font-family: var(--ts-var-root-font-family);
+  --ts-var-viz-description-text-transform: none;
+
+  /* Visualization tile customization on the Liveboard page */
+  --ts-var-viz-border-radius: 15px;
+  /* white */
+  --ts-var-viz-background: #ffffff;
+  /* darkGreen100 */
+  --ts-var-viz-legend-hover-background: #e2fce3;
+
+  /* Filter chips on answers and visualization pages */
+  --ts-var-chip-border-radius: 25pt;
+  --ts-var-chip-title-font-family: var(--ts-var-root-font-family);
+  --ts-var-chip-box-shadow: initial;
+  /* grey100 */
+  --ts-var-chip-background: #eaeaea;
+  --ts-var-chip-color: var(--ts-var-root-color);
+  /* grey200 */
+  --ts-var-chip--hover-background: #cecece;
+  --ts-var-chip--hover-color: var(--ts-var-root-color);
+  /* grey300 */
+  --ts-var-chip--active-background: #b1b1b1;
+  --ts-var-chip--active-color: var(--ts-var-root-color);
+
+  /* Axis titles and labels */
+  /* grey600 */
+  --ts-var-axis-title-color: #6b6e6f;
+  --ts-var-axis-title-font-family: var(--ts-var-root-font-family);
+  /* grey600 */
+  --ts-var-axis-data-label-color: #6b6e6f;
+  --ts-var-axis-data-label-font-family: var(--ts-var-root-font-family);
+
+  /* Menu components */
+  --ts-var-menu-color: var(--ts-var-root-color);
+  /* white */
+  --ts-var-menu-background: #ffffff;
+  --ts-var-menu-font-family: var(--ts-var-root-font-family);
+  --ts-var-menu-text-transform: none;
+  --ts-var-menu--hover-background: rgba(30, 30, 30, 0.05);
+
+  /* Dialogs and modals that prompt users to perform an action or enter information */
+  --ts-var-dialog-body-background: rgba(0, 0, 0, 0);
+  --ts-var-dialog-body-color: var(--ts-var-root-color);
+  --ts-var-dialog-header-background: rgba(0, 0, 0, 0);
+  --ts-var-dialog-header-color: var(--ts-var-root-color);
+  --ts-var-dialog-footer-background: rgba(0, 0, 0, 0);
+
+  /* Segment control */
+  /* grey100 */
+  --ts-var-segment-control-hover-background: #eaeaea;
+
+  /** 3823349 */
+  --ts-light-green-background-color: #b8e1ba;
+  --ts-var-green-800: #125d15;
+  --ts-var-green-900: #054c07;
+  --ts-var-mint-cream: #e2fce3;
+  --ts-var-green-400: #64ac68;
+  --ts-var-green-500: #3a913f;
+  --ts-var-green-600: #206f23;
+  --ts-var-checkbox-hover-border: var(--ts-var-application-color);
+  --ts-var-menu-selected-text-color: var(--ts-var-application-color);
+  --ts-var-liveboard-tab-active-border-color: var(--ts-var-application-color);
+  --ag-range-selection-border-color: var(
+    --ts-var-search-bar-auto-complete-hover-background
+  );
+  /** 3876459 */
+  --ts-var-button--primary--active-background: var(--ts-var-green-900);
+}
+
+/* Include custom font */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://cdn.northerntrust.com/common/webfonts/roboto/Roboto-Light.woff2)
+    format(woff2);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://cdn.northerntrust.com/common/webfonts/roboto/Roboto-Regular.woff2)
+    format(woff2);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://cdn.northerntrust.com/common/webfonts/roboto/Roboto-Medium.woff2)
+    format(woff2);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://cdn.northerntrust.com/common/webfonts/roboto/Roboto-Bold.woff2)
+    format(woff2);
+}
+
+div#root {
+  /* Styles for the root div */
+
+  /* Nested styles for direct children of div#root */
+  & > div {
+    overflow: hidden;
+
+    /* NotherTrust powered by thoughtspot footer*/
+    & div[class^="footer"] {
+      display: none !important;
+    }
+  }
+}
+
+/* hide search bar on the home page */
+div[class$="homepageSearchbarContainer"][data-testid="homepage-searchbar"] {
+  padding: 0 40px;
+}
+
+/* added some space aboe KPI widget */
+[data-testid="homepage-module-wrapper"]
+  .homepage-watchlist-module__mainContainer {
+  margin-top: 0.8571rem;
+}
+
+/* Search data -> select data source modal : Hide the source settings button, which allows switching between models, views, SQL views, and tables. Default to the model view. */
+div[class~="choose-sources-v2-module__leftPanel"] {
+  & > div[class$="multipleSelectToggle"],
+  & button[data-testid="choose-sources-toggle-filter-button"] {
+    display: none;
+  }
+}
+
+.avatar-module__bgBlueBase {
+  background-color: #336f5c;
+}
+
+.avatar-module__bgTealBase {
+  background-color: #2e8fc2;
+}
+
+.avatar-module__bgOrangeBase {
+  background-color: #e97c05;
+}
+
+.avatar-module__bgPurpleBase {
+  background-color: #ac5d9f;
+}
+
+.avatar-module__bgGrayBase {
+  background-color: #808182;
+}
+
+.avatar-module__bgGreenBase {
+  background-color: #5d970c;
+}
+
+div[data-testid="pinboard-header"] {
+  /* Styles applied to /anchor-intelligence/liveboards/liveboard-id */
+  &,
+    /* to make liveboard header fully occupy the available width */
+    &+div[class~="pinboard-header-module__tabAndFilterWrapperEmbed"] {
+    margin: unset !important;
+    border-radius: unset !important;
+  }
+
+  /* reduced the min height for liveboard header */
+  & > div[class*="compactHeader"] {
+    min-height: unset;
+  }
+}
+
+/* to hide few options in date control */
+div#filter-operator-options div#TODAY,
+div#filter-operator-options div#TOMORROW,
+div#filter-operator-options div#NEXT,
+div#date_units_name div#SECOND,
+div#date_units_name div#MINUTE,
+div#date_units_name div#HOUR,
+div#date_units_name div#NEXT,
+div#date_units_name div#TOMORROW,
+div#date_units_name div#TODAY {
+  display: none !important;
+}
+
+/* hide few options in share modal */
+div[class*="__shareDialog"] {
+  /* to hide send notification and add message checbox */
+  &>div[data-testid="universal-share-dialog-header"]>div[class*="__shareOptions"],
+    /* to hide text "this liveboard is deisvocerable" */
+    &>div[class*="__discoverabilitySection"],
+    /* to hide copy link option */
+    &>div[class*="__copyLinkSection"] {
+    display: none !important;
+  }
+}
+
+div[data-testid="modal-container"]
+  div[class*="discoverability-checkbox-module__discoverabilitySection"] {
+  display: none !important;
+}
+
+/* to hide custom action in earch embed */
+div[class*="answer-edit-panel"]
+  > div[class*="nav-module__panelButton"]
+  > button[data-testid="action-selector-nav-btn"] {
+  display: none !important;
+}
+
+/* to hide "Make this Liveboard discoverable" in create new liveboard modal */
+div[class*="create-liveboard-modal-module"] {
+  & div[data-testid="create-pinboard-checkbox"],
+  & div[data-testid="create-pinboard-checkbox"] ~ div {
+    display: none !important;
+  }
+}
+
+/* hide manage alert in KPI watchlist */
+div[class*="homepage-watchlist-module__headerButtonsContainer"]
+  button[data-testid="watchlist-create-alert"],
+div[class*="homepage-watchlist-module__popover"]
+  div[data-testid="watchlist-action-menu"]
+  div[data-testid="manage-alert"],
+div[data-testid="answer-header-action-menu"] div[data-testid="monitor"],
+div[data-testid="answer-header-action-menu"] div[data-testid="manageMonitor"] {
+  display: none !important;
+}
+
+/*  3587436 */
+
+div[class*="banner-alert-module"][role="alert"] {
+  background-color: #e1fcff;
+
+  & > svg:first-of-type {
+    fill: #0a7a82;
+  }
+
+  & > div[class^="banner-alert-module__content"] p {
+    color: #1e1e1e;
+  }
+}
+
+.liveboard-tab-item-module__tabNameWrapper {
+  span[role="heading"] {
+    color: #3d4042;
+  }
+
+  &:hover span[role="heading"] {
+    color: #2d8031;
+  }
+
+  span[role="heading"][class*="tabNameSelected"] {
+    color: #2d8031;
+
+    &::after {
+      border-bottom-color: #2d8031;
+    }
+  }
+}
+
+.bk-outline .ag-theme-alpine .ag-row:hover,
+.table-module__cellSelected,
+.bk-zebra .ag-theme-alpine .ag-row:hover {
+  background-color: #e2fce3;
+}
+
+.table-module__cellOutline {
+  border: 1px solid var(--ts-var-green-800) !important;
+}
+
+input[type="checkbox"].checkbox-module__nativeCheckbox:checked {
+  & + .checkbox-module__customCheckbox {
+    color: #2d8031;
+    border-color: #2d8031;
+
+    & > span[data-radiant-v2].icon-module__text-color {
+      fill: #2d8031;
+    }
+  }
+}
+
+.pinboard-content-module__tile.pinboard-content-module__crossFiltersImpactedContainer {
+  background-image: linear-gradient(to right, #cecece, #cecece);
+}
+
+.answer-content-header-module__container.answer-content-header-module__highlightHeaderBlue {
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+.answer-title-module__titleTextWhite {
+  color: #3d4042;
+}
+
+.filter-panel-module__filterPanelItem.filter-panel-module__crossFilter {
+  background-color: var(--ts-var-chip-background);
+}
+
+/** 3660231 */
+span[class$="queryPerformanceStats"] {
+  display: none !important;
+}
+
+/** 3782434 */
+div[data-testid="universal-share-dialog-header"]
+  div[class*="headerTextContainer"]
+  button[aria-label="Information"] {
+  display: none !important;
+}
+
+/** 3700488 */
+div[data-testid="pinboard-edit-header-container"] {
+  background-color: #f7f8fa;
+}
+
+/** 3823349 */
+.form-control-module__hasFocus .form-control-module__label {
+  color: var(--ts-var-root-color);
+}
+
+.link-module__blue:hover,
+.avatar-module__nameLink:hover,
+input[type="checkbox"].checkbox-module__nativeCheckbox:indeterminate
+  + .checkbox-module__customCheckbox,
+.primary-column-module__showMoreWrapper p,
+.date-picker-module__button.date-picker-module__textButton,
+.menu-module__actionMenu.menu-module__sideNavVariant
+  .menu-module__menuGroupWrapper
+  > .menu-module__item
+  > .menu-module__itemInfo
+  .menu-module__itemText
+  .menu-module__labelHighlight,
+input[type="checkbox"].checkbox-module__nativeCheckbox:checked
+  + .checkbox-module__customCheckbox {
+  color: var(--ts-var-application-color);
+}
+
+[data-radiant-v2] .input-base-module__container.input-base-module__hasFocus,
+[data-radiant-v2] .text-area-module__textarea:focus,
+.icon-header-module__iconHeader .icon-header-module__chevronDownIcon,
+.title-header-module__titleHeader .title-header-module__chevronDownIcon,
+input[type="checkbox"].checkbox-module__nativeCheckbox:indeterminate
+  + .checkbox-module__customCheckbox,
+.select-module__select .select-module__selectOpen.select-module__selectHead,
+.input-mentions-module__container.input-mentions-module__hasFocus,
+.manage-item-textbox-module__manageItemsInputBox {
+  border: 1px solid var(--ts-var-application-color);
+}
+
+[data-radiant-v2].icon-module__blue,
+.radio-module__customRadio .radio-module__customRadioCircle {
+  fill: var(--ts-var-application-color);
+}
+
+.toggle-module__toggleCheckbox:checked
+  + .toggle-module__toggleSwitchBackground
+  .toggle-module__toggleSwitchMarker {
+  background-color: var(--ts-var-application-color);
+}
+
+.size-select-module__sizeSelector
+  .size-select-module__size.size-select-module__selected
+  .size-select-module__sizeInner,
+.radio-module__radio:checked + .radio-module__customRadio,
+.radio-module__radioLabel:not(.radio-module__radioDisabled):hover
+  .radio-module__customRadio,
+.toggle-module__toggleCheckbox:checked
+  + .toggle-module__toggleSwitchBackground
+  .toggle-module__toggleSwitchMarker,
+input[type="checkbox"].checkbox-module__nativeCheckbox:checked
+  + .checkbox-module__customCheckbox {
+  border-color: var(--ts-var-application-color);
+}
+
+.size-select-module__sizeSelector .size-select-module__size:hover,
+.toggle-module__toggleCheckbox:checked
+  + .toggle-module__toggleSwitchBackground {
+  background-color: var(--ts-light-green-background-color);
+}
+
+.sage-search-bar-with-error-bar-module__sageDataSourceCollapseIconActive {
+  background: var(--ts-light-green-background-color);
+}
+
+[data-radiant-v2].icon-module__stroke-blue {
+  stroke: var(--ts-light-green-background-color);
+}
+
+button[data-testid="modal-confirm-button"][aria-label="Done"].button-module__backgroundLight.button-module__primary:not(
+    .button-module__disabled
+  ):active {
+  background-color: var(--ts-var-green-900);
+}
+
+.loader-contextual-module__blue {
+  border-color: var(--ts-var-application-color) transparent
+    var(--ts-var-application-color) var(--ts-var-application-color);
+}
+.table-viz-module__colHeaderHighlight {
+  border-left: 1px solid var(--ts-var-green-800) !important;
+  border-right: 1px solid var(--ts-var-green-800) !important;
+  border-top: 1px solid var(--ts-var-green-800) !important;
+}
+
+.table-module__highlight {
+  border-left: 1px solid var(--ts-var-green-800) !important;
+  border-right: 1px solid var(--ts-var-green-800) !important;
+}
+
+/** 3876459 */
+.homepage-carousel-card-module__card {
+  .homepage-carousel-card-module__pinboardMetricsCardHeader {
+    background: linear-gradient(
+      91.6deg,
+      var(--ts-var-application-color),
+      var(--ts-var-green-500) 103.93%
+    );
+  }
+
+  &.homepage-carousel-card-module__selected {
+    border: 1px solid var(--ts-var-green-500);
+    box-shadow:
+      0 0 0 3px var(--ts-light-green-background-color),
+      0 0 0 4px var(--ts-var-green-500);
+
+    &:hover {
+      border: 1px solid var(--ts-var-green-500);
+      box-shadow:
+        0 0 0 3px var(--ts-light-green-background-color),
+        0 0 0 4px var(--ts-var-green-500);
+    }
+  }
+
+  &:not(
+      .homepage-carousel-card-module__cardDisabled,
+      .homepage-carousel-card-module__selected
+    ):hover {
+    border: 1px solid var(--ts-var-green-500);
+  }
+}
+
+.card-module__cardWrapper:focus {
+  border: 1px solid var(--ts-var-green-500);
+}
+
+.select-metric-module__clearAllBtnText {
+  color: var(--ts-var-application-color) !important;
+}
+
+.add-viz-to-pinboard-module__itemSelected,
+.add-viz-to-pinboard-module__pinboardItem:focus {
+  background-color: var(--ts-var-mint-cream);
+  color: var(--ts-var-application-color);
+
+  .add-viz-to-pinboard-module__pinboardName {
+    color: var(--ts-var-application-color);
+  }
+
+  &:hover {
+    background-color: var(--ts-var-mint-cream);
+
+    .add-viz-to-pinboard-module__pinboardName {
+      color: var(--ts-var-application-color);
+    }
+  }
+}
+
+.typography-module__accent {
+  color: var(--ts-var-application-color);
+}
+
+.tag-column-module__link,
+.home-library-module__labelContainer {
+  border: 1px solid var(--ts-var-green-600);
+}
+
+.pinboard-header-module__filterViewButtonActive button svg {
+  fill: var(--ts-var-green-500) !important;
+}
+
+.link-module__blue.link-module__blue:hover {
+  color: var(--ts-var-application-color);
+}
+
+/** 4002674 */
+
+.button-module__backgroundLight.button-module__secondary.button-module__buttonSelected {
+  color: var(--ts-var-mint-cream);
+  background-color: var(--ts-var-mint-cream);
+}
+
+.button-module__backgroundLight.button-module__secondary.button-module__buttonSelected:not(
+    .button-module__disabled
+  ):hover {
+  color: var(--ts-light-green-background-color);
+  background-color: var(--ts-light-green-background-color);
+}
+
+.button-module__backgroundLight.button-module__secondary.button-module__buttonSelected
+  > [data-radiant-v2].icon-module__text-color {
+  color: var(--ts-var-application-color);
+}
+
+.pinboard-header-module__filterViewButtonActive button {
+  background-color: var(--ts-light-green-background-color) !important;
+}
+
+.button-module__backgroundLight.button-module__secondary:not(
+    .button-module__disabled
+  ):focus {
+  background-color: var(--ts-var-mint-cream);
+}
+
+/** 4063769 */
+.suggest-widget .monaco-list-row.focused {
+  background-color: var(--ts-var-mint-cream) !important;
+  color: var(--ts-var-application-color) !important;
+}
+
+.answer-title-module__withDynamicTitle:focus-within > div > div > div {
+  box-shadow: 0 0 0 1px var(--ts-var-application-color) !important;
+}
+
+h2 {
+  &.library-header-module__libraryTitle,
+  &.favorite-carousel-card-module__pageTitle,
+  &.home-trending-module__title,
+  &.typography-module__page-title,
+  &[data-testid="watchlist-main-title"] {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+/** in 10.15  avatar name color disappeared fix */
+.avatar-module__name:hover {
+  color: var(--ts-var-application-color);
+  text-decoration: underline;
+}
+
+/** 4452502: to fix the issue of add KPI button in watchlist getting unhighlighted when hovered or focused */
+div[class*="watchlist"][class*="addKpiLink"] {
+  > button[data-testid="add-kpi-btn"] {
+    &:not(.button-module__disabled):hover,
+    &:not(.button-module__disabled):focus {
+      background-color: var(
+        --ts-var-button--tertiary--hover-background,
+        rgba(0, 0, 0, 0.06)
+      ) !important;
+    }
+
+    > svg {
+      width: 1.1428571429rem;
+      min-width: 1.1428571429rem;
+      height: 1.1428571429rem;
+      min-height: 1.1428571429rem;
+    }
+
+    > p {
+      font-size: 1rem;
+      line-height: 1.43;
+    }
+  }
+}
+
+/** 4486648: to fix alignment issues in Home Library and Favorite sections */
+.home-library-module__headerContainer,
+.library-header-module__libraryHeader,
+.home-library-module__rightLinks {
+  align-items: center;
+
+  .library-header-module__libraryHeader {
+    .library-header-module__librarySeperator {
+      margin-top: unset;
+    }
+    ul.tab-module__tabHeader.library-header-module__libraryTabContainer {
+      margin-top: unset;
+    }
+    .tab-module__tabHorizontal {
+      section.tab-module__tabPanel {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+}
+
+.answer-container-module__answerListTableContainer
+  > div[data-testid="answer-list-table"]
+  > div[class*="-table-header"],
+.liveboard-container-module__liveboardListTableContainer
+  > div[data-testid="liveboard-list-table"]
+  > div[class*="-table-header"] {
+  align-items: center;
+  margin: 0.25rem 0 0.5rem;
+  .tab-module__tabHorizontal {
+    section.tab-module__tabPanel {
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+.favorite-carousel-card-module__favCarouselContainer {
+  .favorite-carousel-card-module__favHeaderContainer {
+    align-items: center;
+
+    .favorite-carousel-card-module__addToFavoriteAction {
+      margin-top: unset;
+    }
+
+    .favorite-carousel-card-module__verticalSeparator {
+      margin-top: unset;
+    }
+  }
+}
+
+/** 4443433 : Disable hidden insert object button in add note */
+button[data-tooltip-content="Insert objects"][data-testid="toolbar-add-objects"] {
+  display: none !important;
+}
+
+/** 4531090 */
+div[data-testid*="homepage-watchlist-component"]
+  div[data-testid*="watchlist-main-container"]
+  .homepage-watchlist-module__watchlistHeader {
+  align-items: center;
+}
+
+/** 4531090 */
+button[data-tooltip-content="Link"],
+button[data-tooltip-content="Link"] + .toolbar-module__divider {
+  display: none !important;
+}
